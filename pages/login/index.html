@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="./index.css">
     <title>Petinfo - Login</title>
 </head>
+
 <body>
-    <main></main>
+    <main>
+        <section class="left-side">
+            <div class="div-left">
+                <h2>Petinfo</h2>
+                <h3><strong>Amor</strong> e <strong>carinho</strong> por meio do conhecimento</h3>
+                <p>Todas as informações para melhorar a vida do seu pet em um só lugar</p>
+                <img src="../../img-login.jpg">
+            </div>
+        </section>
+        <section class="right-side">
+            <div class="div-form">
+            <h3>Login</h3>
+            <form>
+                <label>Usuário</label>
+                <input class="input"type="text" id="email" placeholder="Digite seu usuário aqui">
+                <label>Senha</label>
+                <input class="input wrong-input" type="password"id="password"placeholder="Digite sua senha aqui">
+                <p class="wrong-password hidden">A senha está incorreta</p>
+                <button type="submit" class="button-acess">Acessar</button>
+                <p><strong>Ainda não possui conta?</strong></p>
+                <p>Clicando no botão abaixo, você pode se cadastrar rapidamente</p>
+                <a href="../register/index.html"  type="submit" class="button-register">Cadastrar</a>
+                </div>
+            </form>
+        </section>
+    </main>
     <script type="module" src="index.js"></script>
 </body>
+
 </html>
