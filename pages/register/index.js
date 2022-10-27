@@ -2,31 +2,23 @@ import { registerUser } from "./api.js"
 
 registerUser()
 
+
 export function checkInput() {
     const divSucess = document.querySelector(".div-sucessful")
     const inputs = document.querySelectorAll(".input")
     const buttonRegister = document.querySelector(".button-register")
-    console.log(inputs)
-
-    inputs.forEach((element) => {
-        buttonRegister.addEventListener("click", (event) => {
-            event.preventDefault()
-            if (element.value == false) {
-                buttonRegister.disabled = true
-                divSucess.classList.add("hidden")
-                buttonRegister.classList.remove("loading")
-                window.location.reload()
-            }
-            else {
-                buttonRegister.disabled = false
-                divSucess.classList.remove("hidden")
-                buttonRegister.classList.add("loading")
-            }console.log(buttonRegister.disabled)
-        })
-    }) 
-
+    
+    console.log(inputs[1].value == "")
+    if(inputs[0].value == "" || inputs[1].value == "" || inputs[2].value == "" || inputs[3].value == ""){
+        buttonRegister.disabled = true
+    }else{buttonRegister.disabled = false}
 }
-checkInput()
+
+document.addEventListener("keyup",()=>{
+    checkInput()
+}) 
+
+
 
 /* const toast = (type,title, message) =>{
     const body = document.querySelector("body")

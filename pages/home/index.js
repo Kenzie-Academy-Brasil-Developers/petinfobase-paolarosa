@@ -71,7 +71,7 @@ function relative(object) {
     })
 }
 
-
+console.log("qlqrcoisa")
 function createRenderPosts(object) {
 
     const tagLi = document.createElement("li")
@@ -121,6 +121,7 @@ function createRenderPosts(object) {
     tagAcess.classList.add("post-acess")
     tagAcess.innerText = "Acessar publicação"
     tagAcess.id = object.id
+
 
     const modal = document.querySelector(".modaldiv")
     tagAcess.addEventListener("click", (event) => {

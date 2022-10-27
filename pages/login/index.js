@@ -2,22 +2,18 @@ import { login } from "./api.js"
 
 login()
 
-function checkInputButtonDisabled() {
+
+export function checkInput() {
     const inputs = document.querySelectorAll(".input")
-    const buttonAcess = document.querySelector(".button-acess")
-    inputs.forEach((element) => {
-        buttonAcess.addEventListener("click", (event) => {
-            event.preventDefault()
-            if (element.value == false) {
-                buttonAcess.disabled = true
-            }
-            else {
-                buttonAcess.disabled = false
-            }
-        })
-    })
+    const buttonRegister = document.querySelector(".button-acess")
+    
+    console.log(inputs)
+    if(inputs[0].value == "" || inputs[1].value == ""){
+        buttonRegister.disabled = true
+    }else{buttonRegister.disabled = false}
 }
-checkInputButtonDisabled()
 
-
+document.addEventListener("keyup",()=>{
+    checkInput()
+}) 
 

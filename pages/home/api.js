@@ -1,7 +1,9 @@
 import { imageInsertDom, renderPost } from "./index.js"
 
-let token = JSON.parse(localStorage.getItem("@petInfo"))
-
+let token = JSON.parse(localStorage.getItem("@petInfo")) || ""
+if(!token){
+    window.location.replace("../login/index.html")
+}
 
 export async function catchPosts(token) {
     const options = {

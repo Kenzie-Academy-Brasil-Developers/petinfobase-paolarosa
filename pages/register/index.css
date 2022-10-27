@@ -71,6 +71,7 @@ form input {
     font-size: 14px;
     color: #868E96;
     margin-top: 10px;
+    padding-left: 15px;
 }
 
 
@@ -91,7 +92,10 @@ form label {
     font-size: 16px;
     margin-top: 30px;
     position: relative;
+    cursor: pointer;
 }
+
+
 
 .loading::after {
     content: "";
