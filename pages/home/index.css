@@ -2,10 +2,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative; 
+    position: relative;
     min-height: 1200px;
     height: 100vh
- 
 }
 
 header {
@@ -210,18 +209,15 @@ li {
 }
 
 .modal {
-    display: inline-block;
-    vertical-align: middle;
+
     padding: 30px 30px 10px 30px;
     gap: 32px;
     background: #FCFEFF;
     border-radius: 8px;
     width: 750px;
     min-height: 300px;
-    z-index: 1;
-    position: absolute;
-    left: 30%;
-    top: 30%;
+    margin: 10% auto;
+  
 }
 
 .arruma-modal {
@@ -245,10 +241,15 @@ li {
 }
 
 .modaldiv {
-    position: absolute;
-    width: 100vw;
-    height: 100%;
+
     background: rgba(33, 37, 41, 0.5);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto
 
 
 }
@@ -348,10 +349,7 @@ li {
     border-radius: 8px;
     width: 750px;
     height: 250px;
-    z-index: 1;
-    position: absolute;
-    top: 50px;
-    left: 30%;
+    margin: 10% auto;
 }
 
 .buttonSure {
