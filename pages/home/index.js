@@ -71,7 +71,7 @@ function relative(object) {
     })
 }
 
-console.log("qlqrcoisa")
+
 function createRenderPosts(object) {
 
     const tagLi = document.createElement("li")
